@@ -21,6 +21,7 @@ namespace WindowsFormsApp1
         private TextBox aluNota;
         private TextBox aluNombre;
         private TextBox listaAlumnos;
+        private PictureBox pictureBox1;
         Alumnos misAlumnos = new Alumnos();
 
         public Form1()
@@ -42,6 +43,7 @@ namespace WindowsFormsApp1
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,6 +51,8 @@ namespace WindowsFormsApp1
             this.aluNota = new System.Windows.Forms.TextBox();
             this.aluNombre = new System.Windows.Forms.TextBox();
             this.listaAlumnos = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -56,7 +60,7 @@ namespace WindowsFormsApp1
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(48, 110);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 17);
+            this.label3.Size = new System.Drawing.Size(87, 13);
             this.label3.TabIndex = 11;
             this.label3.Text = "Lista de Alumnos";
             // 
@@ -65,7 +69,7 @@ namespace WindowsFormsApp1
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(271, 37);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 17);
+            this.label2.Size = new System.Drawing.Size(30, 13);
             this.label2.TabIndex = 10;
             this.label2.Text = "Nota";
             // 
@@ -74,7 +78,7 @@ namespace WindowsFormsApp1
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(48, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 17);
+            this.label1.Size = new System.Drawing.Size(82, 13);
             this.label1.TabIndex = 9;
             this.label1.Text = "Nombre Alumno";
             // 
@@ -92,14 +96,14 @@ namespace WindowsFormsApp1
             // 
             this.aluNota.Location = new System.Drawing.Point(274, 59);
             this.aluNota.Name = "aluNota";
-            this.aluNota.Size = new System.Drawing.Size(100, 22);
+            this.aluNota.Size = new System.Drawing.Size(100, 20);
             this.aluNota.TabIndex = 7;
             // 
             // aluNombre
             // 
             this.aluNombre.Location = new System.Drawing.Point(48, 60);
             this.aluNombre.Name = "aluNombre";
-            this.aluNombre.Size = new System.Drawing.Size(220, 22);
+            this.aluNombre.Size = new System.Drawing.Size(220, 20);
             this.aluNombre.TabIndex = 6;
             // 
             // listaAlumnos
@@ -111,9 +115,20 @@ namespace WindowsFormsApp1
             this.listaAlumnos.Size = new System.Drawing.Size(496, 256);
             this.listaAlumnos.TabIndex = 12;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(176, 200);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(260, 187);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(651, 426);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listaAlumnos);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -123,6 +138,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.aluNombre);
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
